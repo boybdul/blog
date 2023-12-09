@@ -33,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
+            <title> BOYBDUL </title>
             <main>{children}</main>
           </div>
           <Analytics />
