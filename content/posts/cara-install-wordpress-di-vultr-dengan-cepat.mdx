@@ -1,0 +1,36 @@
+---
+title: Cara Install WordPress di Vultr dengan One Click Apps
+date: "2023-12-09"
+---
+
+Bagi kalian yang belum mempunyai akun Vultr silahkan untuk melihat panduan membuat akun nya [disini](https://www.boybdul.my.id/cara-mendapatkan-saldo-53-di-vultr) agar bisa mendapatkan credit sebanyak $53 Gratis! Karena kali ini kita akan menggunakan credit yang kemarin kita dapatkan di Vultr untuk deploy WordPress secara kilat dengan feature One Click Apps di Vultr.
+
+One Click Apps adalah feature yang di sediakan oleh Vultr untuk memudahkan pengguna nya dalam menginstall WordPress,Joomla,Lemp,Lamp bahkan Minecraft server dengan 1x klik aja! Kalau tidak percaya silahkan simak panduan di bawah ini.
+
+Disini saya menggunakan WordPress One Click Apps dengan spesifikasi server size nya :
+
+> 25GB SSD | 1GB Ram | 1 Core | $5/Bulan
+
+* Silahkan untuk sign in terlebih dahulu ke client area Vultr
+* Lalu pilih Product dan klik +
+* Disini saya memilih layanan Cloud Compute atau yang biasa dikenal VPS
+* Pilih Server Location yang kalian inginkan,saya memilih Singapore karena paling dekat dengan Indonesia
+* Karena saya ingin menggunakan feature WordPress One Click Apps di Vultr jadi saya memilih Application lalu pilih WordPress (by the way guys si WordPress nya ini nanti di install di Ubuntu 18.04 LTS)
+* Selanjutnya silahkan pilih spesifikasi server yang kalian mau,spesifikasi yang saya gunakan sudah saya jelaskan diatas
+* Sekarang silahkan kalian atur sendiri yang kalian mau seperti mengaktifkan IPv6,layanan Backups,Private Network dan SSH Keys
+* Selanjutnya silahkan kalian isi Hostname dan Label untuk server kalian
+* Jika sudah klik Deploy Now.
+* Kalau berhasil akan tampak seperti di bawah ini,silahkan klik manage untuk melihat detail dari server anda
+* Setelah klik manage kalian akan di bawa ke halaman Server Detail
+* Disini kalian bisa melihat username dan password yang nanti akan digunakan untuk sign in ke WordPress dan kalian juga akan menerima email dari Vultr yang berisi Server Detail. Silahkan cek inbox email yang kalian daftarkan di Vultr
+* Silahkan kalian perhatikan pada point nomor 1 di Application Information
+* Disitu tertulis untuk sign in ke wp admin,kalian harus copy paste tulisan:
+
+> ipkalian/wp-admin
+
+* Kalian akan di minta sign in saat membuka wp admin,gunakan username dan password yang kalian dapatkan dari Application Information
+* Jika sudah silahkan Sign In
+* Selanjutnya silahkan pilih bahasa dan isi informasi untuk WordPress kalian
+* Terakhir, WordPress kalian sekarang sudah siap digunakan.
+
+Gimana mudah sekali kan dengan bantuan One Click Apps WordPress ini? kalian tidak perlu jadi linux sysadmin atau install Lemp dan Lamp dulu,cukup dengan 1x klik aja dan Vultr sudah secara instant mempersiapkan WordPress kalian. Kalau seperti ini rasanya tidak perlu lagi guys untuk sewa Managed WordPress atau VPS karena kita tidak perlu menyentuh console atau login ssh berkat feature One Click Apps ini. FYI,setelah kalian deploy maka secara otomatis credit kalian akan berkurang setiap jam, Pricing yang di terapkan tergantung dari spesifikasi Server Size yang tadi kalian pilih. Di artikel selanjutnya saya akan menjelaskan step by step Cara [Menghubungkan/Pointing Domain ke Vultr dan WordPress kalian](https://www.boybdul.my.id/menghubungkan-domain-ke-vultr). So,dont forget to bookmark ya, karena bookmark itu gratis kok hehe.

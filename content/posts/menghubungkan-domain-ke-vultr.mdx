@@ -1,0 +1,22 @@
+---
+title: Menghubungkan Domain ke Vultr
+date: "2023-12-09"
+---
+
+Artikel ini adalah lanjutan dari [Cara Install WordPress di Vultr dengan One Click Apps](https://www.boybdul.my.id/cara-install-wordpress-di-vultr-dengan-cepat) tapi bagi kalian yang belum mempunyai akun Vultr silahkan [kesini](https://www.boybdul.my.id) terlebih dahulu untuk mengetahui panduan cara membuat akun Vultr dan mendapatkan credit sebanyak $53 Gratis!
+
+Sebelum masuk ke pembahasan pastikan kalian sudah mempunyai domain terlebih dahulu. Sebagai contoh, saya disini menggunakan domain boybdul.web.id yang di beli dari rumahweb. Berikut step by step nya :
+
+* Hal pertama kali yang harus kalian lakukan adalah sign in ke client area di website penyedia domain yang kalian beli
+* Ubah nameservers kalian ke nameservers Vultr:
+
+> 1. ns1.vultr.com
+> 2. ns2.vultr.com
+
+* Pastikan nameservers 3,4,5 dan seterus nya kosong. Jika sudah klik update Nameservers kalian
+* Selanjutnya silahkan kembali ke client area akun Vultr kalian dan pilih menu DNS lalu Add Domain
+* Isikan Domain dengan domain kalian dan Default IP Address dengan IP VPS atau Cloud Compute kalian. Jika sudah klik Add
+* Lalu tambahkan www dengan A Records di menu manage DNS domain kalian. Isikan Data dengan IP VPS atau Cloud Compute kalian
+* Terakhir,silahkan sign in ke wordpress kalian. Pilih menu Settings > General > lalu isikan WordPress Address (URL) dan Site Address (URL) dengan domain kalian. Jika sudah silahkan klik Save Changes.
+
+Selesai sudah rangkaian artikel dari [Cara Membuat akun Vultr](https://www.boybdul.my.id/cara-mendapatkan-saldo-53-di-vultr),[Deploy WordPress dengan One Click Apps](https://www.boybdul.my.id/cara-install-wordpress-di-vultr-dengan-cepat) dan terakhir Menghubungkan Domain ke Vultr. FYI,sementara domain kalian tidak bisa di akses karena mengganti Nameservers membutuhkan waktu sekitar 24 Jam untuk propagasi tapi dari pengalaman, saya hanya membutuhkan waktu sekitar 1 Jam kurang dan domain bisa di akses kembali. Oke, jangan lupa untuk bookmark blog ini ya. Sampai jumpa di next artikel.

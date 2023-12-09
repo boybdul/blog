@@ -1,0 +1,51 @@
+---
+title: Cara Install OpenLiteSpeed WordPress di DigitalOcean
+date: "2023-12-09"
+---
+
+Hai semuanya,kali ini saya akan menjelaskan bagaimana cara install OpenLiteSpeed WordPress di droplets DigitalOcean. Bagi kalian yang belum mempunyai Akun DigitalOcean silahkan untuk mendaftar atau SignUp terlebih dahulu [disini](https://m.do.co/c/7d303162073e) atau bisa memanfaatkan [GitHub Student Developer Pack](https://www.boybdul.my.id/cara-mendapatkan-github-student-developer-pack) kalian agar mendapatkan Credit $50.
+
+## Berikut step by step nya :
+
+* Silahkan kalian klik [link](https://marketplace.digitalocean.com/apps/openlitespeed-wordpress) ini
+* Klik Create OpenLiteSpeed WordPress Droplet
+* Lalu atur spesifikasi dari droplet yang kalian inginkan
+* Jika sudah silahkan klik Create Droplet
+
+## Pointing Domain
+
+Setelah berhasil deploy droplet sekarang kita hubungkan domain ke droplet yang baru saja kita buat
+
+* Klik Networking pada menubar bagian kiri
+* Isi domain kalian lalu klik Add Domain
+* Sekarang tinggal update Nameservers kalian pada domain registrar ke Nameservers milik DigitalOcean
+
+> 1. ns1.digitalocean.com
+> 2. ns2.digitalocean.com
+> 3. ns3.digitalocean.com
+
+## SSH Droplet
+
+Cek info credential dari droplet kalian di inbox email,selanjutnya silahkan lakukan SSH ke Droplet kalian untuk mengatur Domain dan SSL dari Let's encrypt.
+
+* Silahkan SSH ke droplet kalian
+
+> bagi pengguna Microsoft bisa menggunakan [Putty](https://www.putty.org) atau [Termius](https://termius.com)
+> bagi pengguna non-Microsoft bisa menggunakan terminal
+
+* *Please input a valid domain:* ketik domain kalian tanpa **http://** atau **https://** lalu tekan **enter**,Contoh:
+
+> www.boybdul.web.id
+
+* *Please verify it is correct. [y/N]* ketik **y** lalu tekan **enter**
+
+* *Do you wish to issue a Let's encrypt certificate for this domain? [y/N]* ketik **y** lalu tekan **enter**
+* *Please enter your E-mail:* ketik **email** kalian lalu tekan **enter**,Contoh:
+
+> saya.boybdul@gmail.com
+
+* *Please verify it is correct: [y/N]* ketik **y** lalu tekan **enter**
+* *Do you wish to force HTTPS rewrite rule for this domain? [y/N]* ketik **y** lalu tekan **enter**
+* *Do you wish to update the system which include the web server? [Y/n]* ketik **y** lalu tekan enter **enter**
+
+Terakhir,silahkan buka droplet kalian di browser dengan ip atau domain kalian untuk mengatur Installasi WordPress. Oke, jangan lupa untuk bookmark blog ini ya. Sampai jumpa di next artikel.
