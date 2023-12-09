@@ -29,7 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>
-                  <Link href="/about">Profile</Link>
+                  <Link href="/about">@Boybdul</Link>
                 </nav>
               </div>
             </header>
@@ -37,6 +37,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
+        <footer>
+            <div class="footer-content">
+              <h1><a href="x.com/boybdul">@boybdul</a></h1>
+     </footer>
       </body>
     </html>
   )
