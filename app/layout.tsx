@@ -33,9 +33,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <head>
-                  <title>Boybdul - Weblog</title>
-            </head>
             <main>{children}</main>
           </div>
           <Analytics />
