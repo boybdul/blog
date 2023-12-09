@@ -25,7 +25,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-2xl mx-auto py-10 px-4">
             <header>
-            <title>Boybdul - Weblog</title>
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
@@ -33,6 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Link href="/about">Profile</Link>
                 </nav>
               </div>
+              <title>Boybdul - Weblog</title>
             </header>
             <main>{children}</main>
           </div>
