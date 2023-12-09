@@ -37,10 +37,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
-        <footer>
-            <div class="footer-content">
-              <h1><a href="x.com/boybdul">@boybdul</a></h1>
-     </footer>
       </body>
     </html>
   )
