@@ -1,7 +1,9 @@
-# Next.js + Contentlayer
+## boybdul.my.id
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+Personal blog running on jekyll & GitHubPages.
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+## Authors
+* Boy Malik | [Twitter](https://twitter.com/boybdul) | [Say Hi!](mailto:mail@boybdul.my.id)
 
-https://next-contentlayer.vercel.app
-
-
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
